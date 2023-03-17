@@ -92,17 +92,29 @@ main > section {
 .res-box .sc-name {
     gap: 10px;
 }
-.res-box:first-child h4 {
-    color: rgb(255, 87, 87);
+.res-box:first-child {
+    background: rgba(255, 87, 87, 0.1);
 }
-.res-box:nth-child(2) h4 {
-    color: rgb(255, 176, 31);
+.res-box:first-child:hover {
+    background: rgba(255, 87, 87, 0.2);
 }
-.res-box:nth-child(3) h4 {
-    color: rgb(0, 189, 145);
+.res-box:nth-child(2) {
+    background: rgba(255, 176, 31, 0.1);
 }
-.res-box:last-child h4 {
-    color: rgb(17, 37, 212);
+.res-box:nth-child(2):hover {
+    background: rgba(255, 176, 31, 0.2);
+}
+.res-box:nth-child(3) {
+    background: rgba(0, 189, 145, 0.1);
+}
+.res-box:nth-child(3):hover {
+    background: rgba(0, 189, 145, 0.2);
+}
+.res-box:last-child {
+    background: rgba(17, 37, 212, 0.1);
+}
+.res-box:last-child:hover {
+    background: rgba(17, 37, 212, 0.2);
 }
 .sc-result strong{
     color: hsl(224, 30%, 27%);
@@ -120,6 +132,7 @@ main > section {
     border-radius: 30px;
     background:hsl(224, 30%, 27%);
     color: #fff;
+    cursor: pointer;
     font-weight: 800;
 }
 .btn:hover {
