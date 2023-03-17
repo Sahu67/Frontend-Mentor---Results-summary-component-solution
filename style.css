@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    border-radius: 20px;
+    width: 600px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+main > section {
+    width: 50%;
+}
+
+.sec-1 {
+    text-align: center;
+    flex-direction: column;
+    border-radius: inherit;
+    padding: 30px 40px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.sec-1 strong {
+    font-size: 1.35rem;
+    color: hsl(241, 100%, 89%);
+}
+.sec-1 .score {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    flex-direction: column;
+    margin: 30px 0;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.score h1 {
+    font-size: 3rem;
+}
+.score span {
+    color:hsl(241, 100%, 89%);
+    font-size: 0.80rem;
+}
+.sec-1 p {
+    margin-top: 15px;
+    color:hsl(241, 100%, 89%);
+}
+
+.sec-2 {
+    padding: 30px;
+}
+.sec-2 h3 {
+    color: hsl(224, 30%, 27%);
+}
+.sec-2 .results {
+    margin: 20px 0 35px;
+}
+.results .res-box {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.res-box:first-child {
+    background: rgba(255, 87, 87, 0.1);
+}
+.res-box:nth-child(2) {
+    background: rgba(255, 176, 31, 0.1);
+}
+.res-box:nth-child(3) {
+    background: rgba(0, 189, 145, 0.1);
+}
+.res-box:last-child {
+    background: rgba(17, 37, 212, 0.1);
+}
+.res-box .sc-name {
+    gap: 10px;
+}
+.res-box:first-child h4 {
+    color: rgb(255, 87, 87);
+}
+.res-box:nth-child(2) h4 {
+    color: rgb(255, 176, 31);
+}
+.res-box:nth-child(3) h4 {
+    color: rgb(0, 189, 145);
+}
+.res-box:last-child h4 {
+    color: rgb(17, 37, 212);
+}
+.sc-result strong{
+    color: hsl(224, 30%, 27%);
+}
+.sc-result span {
+    color: hsl(241, 100%, 85%);
+    font-weight: bold;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 30px;
+    background:hsl(224, 30%, 27%);
+    color: #fff;
+    font-weight: 800;
+}
+.btn:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* utiltiy classes */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 605px) {
+    body {
+        align-items: normal;
+    }
+    main {
+        flex-direction: column;
+    }
+
+    main > section {
+        width: 100%;
+    }
+
+    .sec-1 {
+        border-radius: 0 0 20px 20px;
+    }
+}
